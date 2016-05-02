@@ -5,10 +5,10 @@
  */
 package teste;
 
-import dao.MensagemDAO;
+import mvc.dao.MensagemDAO;
 import java.util.ArrayList;
 import java.util.List;
-import modelo.Mensagem;
+import mvc.modelo.Mensagem;
 
 /**
  *

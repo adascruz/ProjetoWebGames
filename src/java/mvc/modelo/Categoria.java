@@ -1,4 +1,4 @@
-package modelo;
+package mvc.modelo;
 
 import java.io.Serializable;
 import java.util.ArrayList;

@@ -1,4 +1,4 @@
-package dao;
+package mvc.dao;
 
 import java.util.List;
 import javax.persistence.EntityManager;
@@ -8,7 +8,7 @@ import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Predicate;
 import javax.persistence.criteria.Root;
-import modelo.Mensagem;
+import mvc.modelo.Mensagem;
 import util.JPAUtil;
 
 public class MensagemDAO {

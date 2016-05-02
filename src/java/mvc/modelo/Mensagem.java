@@ -3,28 +3,27 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package modelo;
+package mvc.modelo;
 
 import java.io.Serializable;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.Lob;
 
 /**
  *
  * @author Ada
  */
 @Entity
-public class Curriculum implements Serializable {
-    
+public class Mensagem implements Serializable {
     @Id
     @GeneratedValue
     private Long codigo;
-    @Lob
-    private byte[] curriculum;
+    private String mensagem;
+    private String email;
+    private String fone;
 
-    public Curriculum() {
+    public Mensagem() {
     }
 
     public Long getCodigo() {
@@ -34,14 +33,29 @@ public class Curriculum implements Serializable {
     public void setCodigo(Long codigo) {
         this.codigo = codigo;
     }
-    
 
-    public byte[] getCurriculum() {
-        return curriculum;
+    public String getMensagem() {
+        return mensagem;
     }
 
-    public void setCurriculum(byte[] curriculum) {
-        this.curriculum = curriculum;
+    public void setMensagem(String mensagem) {
+        this.mensagem = mensagem;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getFone() {
+        return fone;
+    }
+
+    public void setFone(String fone) {
+        this.fone = fone;
     }
     
     
